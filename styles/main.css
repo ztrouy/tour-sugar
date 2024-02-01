@@ -1,0 +1,31 @@
+html {
+
+}
+
+#container {
+
+}
+
+#upper-row, #lower-row {
+    max-width: 900px;
+}
+
+#lower-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.list {
+    border: 2px dotted goldenrod;
+    text-align: center;
+}
+
+.list ul {
+    list-style-type: none;
+    margin-left: -16px;
+}
+
+.list ul li {
+    padding: 0.4em;
+}
