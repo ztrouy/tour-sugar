@@ -85,6 +85,23 @@ space
 space 
 
 
+bookings->index:Add event listener for clicks
+bookings<--index:Return event Object
+note over bookings:If HTML Element represented by event\nObject is of correct type, do the following
+note over bookings:Assign variable `bandId` to the state `bandid`\nfrom the event Object using parseInt()
+
+bookings->database:Invoke getBands()
+bookings<--database:Return Array of Objects
+note over bookings:Assign returned Array of Objects to\nvariable `bands`
+note over bookings:Initialize empty Object `bandObject`
+loop Iterate through `bands`
+note over bookings:If band.id matches bandId,\nthen assign band to `bandObj`
+end
+note over bookings:Invoke a window alert that interpolates the\nObject data in `bandObj` using a String\nTemplate
+space 
+space 
+
+
 
 venues->index:Add event listener for clicks
 venues<--index:Return event Object
@@ -127,23 +144,5 @@ note over bands:If booking.venueId matches venue.id\nAND venue.name does not exi
 end
 end
 note over bands:Invoke a window alert that interpolates the\nStrings in `venueNames` using a String\nTemplate and the .join() method
-space 
-space 
-
-
-
-bookings->index:Add event listener for clicks
-bookings<--index:Return event Object
-note over bookings:If HTML Element represented by event\nObject is of correct type, do the following
-note over bookings:Assign variable `bandId` to the state `bandid`\nfrom the event Object using parseInt()
-
-bookings->database:Invoke getBands()
-bookings<--database:Return Array of Objects
-note over bookings:Assign returned Array of Objects to\nvariable `bands`
-note over bookings:Initialize empty Object `bandObject`
-loop Iterate through `bands`
-note over bookings:If band.id matches bandId,\nthen assign band to `bandObj`
-end
-note over bookings:Invoke a window alert that interpolates the\nObject data in `bandObj` using a String\nTemplate
 space 
 space 
