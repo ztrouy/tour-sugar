@@ -10,7 +10,10 @@ export const venuesList = () => {
     for (const venue of venues) {
         
         // Generate the HTML for the venue item
-        venuesHTML += `<li>${venue.name}</li>`
+        venuesHTML += `<li data-type="venue"
+                            data-id="${venue.id}">
+                            ${venue.name}
+                        </li>`
     }
 
     // Finish string of HTML to return
