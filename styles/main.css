@@ -13,17 +13,20 @@ html {
 #lower-row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4em;
 }
 
 
 .list {
     border: 2px dotted goldenrod;
-    text-align: center;
+    min-width: 45%;
 }
 
-.list ul {
+#upper-row .list ul {
     list-style-type: none;
     margin-left: -16px;
+    text-align: center;
 }
 
 .list ul li {
