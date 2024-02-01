@@ -1,0 +1,149 @@
+title Tour Some Sugar On Me
+
+participant index
+participant main
+participant bookings
+participant venues
+participant bands
+participant database
+
+index->main:Calls main.js
+space 
+
+
+
+main->index:Requests HTML Element with id "booking-list"\nusing the .querySelector method
+main<--index:Returns HTML Element as an Object
+note over main:Assigns the returned Object\nto variable `bookingHTML`
+
+main->bookings:Invokes bookingsList()
+bookings->database:Invokes getBookings()
+bookings<--database:Returns an Array of Objects
+note over bookings:Assigns the returned Array of\nObjects to variable `bookings`
+
+note over bookings:Initializes String `bookingsHTML`\nto represent HTML to be returned
+loop Iterate through `bookings`
+bookings->database:Invokes getBands()
+bookings<--database:Returns an Array of Objects
+note over bookings:Assigns the returned Array of Objects\nto variable `bands`
+note over bookings:Initializes emptry String `bandName`
+loop Iterates through `bands`
+note over bookings:If band matches booking, assign\nband.name to `bandName`
+end
+bookings->database:Invokes getVenues()
+bookings<--database:Returns an Array of Objects
+note over bookings:Assigns the returned Array of Objects\nto variable `venues`
+note over bookings:Initializes emptry String `venueName`
+loop Iterates through `venues`
+note over bookings:If venue matches booking, assign\nvenue.name to `venueName`
+end
+note over bookings:Interpolate Object data, `bandName`,\nand `venueName` into a String\nTemplate and add to `bookingsHTML`
+end
+note over bookings:Add the ending of the HTML String\nrepresentation to `bookingsHTML`
+
+main<--bookings:Return String `bookingsHTML`
+main->index:Injects String `bookingsHTML` into the HTML\nElement represented by `bookingHTML` using\nthe .innterHTML method, updating the DOM
+space 
+space 
+
+
+
+main->index:Requests HTML Element with id "venue-list"\nusing the .querySelector method
+main<--index:Returns HTML Element as an Object
+note over main:Assigns the returned Object\nto variable `venueHTML`
+main->venues:Invokes venuesList()
+venues->database:Invokes getVenues()
+venues<--database:Returns an Array of Objects
+note over venues:Assigns the returned Array of\nObjects to variable `venues`
+note over venues:Initializes String `venuesHTML`\nto represent HTML to be returned
+loop Iterate through `venues`
+note over venues:Interpolate Object data into a String\nTemplate and add to `venuesHTML`
+end
+note over venues:Add the ending of the HTML String\nrepresentation to `venuesHTML`
+main<--venues:Return String `venuesHTML`
+main->index:Injects String `venuesHTML` into the HTML\nElement represented by `venueHTML` using\nthe .innterHTML method, updating the DOM
+space 
+space 
+
+
+
+main->index:Requests HTML Element with id "band-list"\nusing the .querySelector method
+main<--index:Returns HTML Element as an Object
+note over main:Assigns the returned Object\nto variable `bandHTML`
+main->bands:Invokes bandsList()
+bands->database:Invokes getBands()
+bands<--database:Returns an Array of Objects
+note over bands:Assigns the returned Array of\nObjects to variable `bands`
+note over bands:Initializes String `bandsHTML`\nto represent HTML to be returned
+loop Iterate through `bands`
+note over bands:Interpolate Object data into a String\nTemplate and add to `bandsHTML`
+end
+note over bands:Add the ending of the HTML String\nrepresentation to `bandsHTML`
+main<--bands:Return String `bandsHTML`
+main->index:Injects String `bandsHTML` into the HTML\nElement represented by `bandHTML` using\nthe .innterHTML method, updating the DOM
+space 
+space 
+
+
+
+venues->index:Add event listener for clicks
+venues<--index:Return event Object
+note over venues:If HTML Element represented by event\nObject is of correct type, do the following
+note over venues:Assign variable `venueId` to the state `id`\nfrom the event Object using parseInt()
+venues->database:Invoke getBookings()
+venues<--database:Return Array of Objects
+note over venues:Assign returned Array of Objects\nto variable `bookings`
+venues->database:Invoke getBands()
+venues<--database:Return Array of Objects
+note over venues:Assign returned Array of Objects to\nvariable `bands`
+note over venues:Initialize empty Array `bandNames`
+loop Iterate through `bookings`
+note over venues:If booking.venueId matches venueId,\nthen do the following
+loop Iterate through `bands`
+note over venues:If booking.bandId matches band.id\nAND band.name does not exist\nin the `bandNames` Array, push\nband.name to `bandNames`
+end
+end
+note over venues:Invoke a window alert that interpolates the\nStrings in `bandNames` using a String\nTemplate and the .join() method
+space 
+space 
+
+
+
+bands->index:Add event listener for clicks
+bands<--index:Return event Object
+note over bands:If HTML Element represented by event\nObject is of correct type, do the following
+note over bands:Assign variable `bandId` to the state `id`\nfrom the event Object using parseInt()
+bands->database:Invoke getBookings()
+bands<--database:Return Array of Objects
+note over bands:Assign returned Array of Objects\nto variable `bookings`
+bands->database:Invoke getVenues()
+bands<--database:Return Array of Objects
+note over bands:Assign returned Array of Objects to\nvariable `venues`
+note over bands:Initialize empty Array `venueNames`
+loop Iterate through `bookings`
+note over bands:If booking.bandId matches bandId,\nthen do the following
+loop Iterate through `venues`
+note over bands:If booking.venueId matches venue.id\nAND venue.name does not exist\nin the `venueNames` Array, push\nvenue.name to `venueNames`
+end
+end
+note over bands:Invoke a window alert that interpolates the\nStrings in `venueNames` using a String\nTemplate and the .join() method
+space 
+space 
+
+
+
+bookings->index:Add event listener for clicks
+bookings<--index:Return event Object
+note over bookings:If HTML Element represented by event\nObject is of correct type, do the following
+note over bookings:Assign variable `bandId` to the state `bandid`\nfrom the event Object using parseInt()
+
+bookings->database:Invoke getBands()
+bookings<--database:Return Array of Objects
+note over bookings:Assign returned Array of Objects to\nvariable `bands`
+note over bookings:Initialize empty Object `bandObject`
+loop Iterate through `bands`
+note over bookings:If band.id matches bandId,\nthen assign band to `bandObj`
+end
+note over bookings:Invoke a window alert that interpolates the\nObject data in `bandObj` using a String\nTemplate
+space 
+space 
