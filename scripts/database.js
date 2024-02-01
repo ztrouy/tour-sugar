@@ -42,70 +42,70 @@ const database = {
             name: 'The Rolling Stones', 
             memberCount: 4, 
             genre: 1, 
-            formationYear: '1962-07-12' 
+            formationYear: '1962' 
         },
         { 
             id: 2, 
             name: 'Coldplay', 
             memberCount: 4, 
             genre: 2, 
-            formationYear: '1996-01-16' 
+            formationYear: '1996' 
         },
         { 
             id: 3, 
             name: 'Miles Davis Quintet', 
             memberCount: 5, 
             genre: 3, 
-            formationYear: '1955-10-26' 
+            formationYear: '1955' 
         },
         { 
             id: 4, 
             name: 'B.B. King', 
             memberCount: 1, 
             genre: 4, 
-            formationYear: '1948-11-25' 
+            formationYear: '1948' 
         },
         { 
             id: 5, 
             name: 'Taylor Swift', 
             memberCount: 1, 
             genre: 5, 
-            formationYear: '2006-10-24' 
+            formationYear: '2006' 
         },
         { 
             id: 6, 
             name: 'U2', 
             memberCount: 4, 
             genre: 1, 
-            formationYear: '1976-09-25' 
+            formationYear: '1976' 
         },
         { 
             id: 7, 
             name: 'Maroon 5', 
             memberCount: 5, 
             genre: 2, 
-            formationYear: '1994-09-21' 
+            formationYear: '1994' 
         },
         { 
             id: 8, 
             name: 'John Coltrane Quartet', 
             memberCount: 4, 
             genre: 3, 
-            formationYear: '1960-12-21' 
+            formationYear: '1960' 
         },
         { 
             id: 9, 
             name: 'Eric Clapton', 
             memberCount: 1, 
             genre: 4, 
-            formationYear: '1963-10-18' 
+            formationYear: '1963' 
         },
         { 
             id: 10,
              name: 'Dolly Parton', 
              memberCount: 1, 
              genre: 5, 
-             formationYear: '1959-07-13' 
+             formationYear: '1959' 
         }
     ],
     bookings: [
