@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Some Sugar On Me</title>
-    <link type="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <div id="container">
-        <article id="booking-list"></article>
-        <article id="venue-list"></article>
-        <article id="band-list"></article>
+        <div id="upper-row">
+            <article id="booking-list" class="list"></article>
+        </div>
+        <div id="lower-row">
+            <article id="venue-list" class="list"></article>
+            <article id="band-list" class="list"></article>
+        </div>
     </div>
     <script type="module" src="/scripts/main.js"></script>
 </body>
