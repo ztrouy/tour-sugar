@@ -30,7 +30,10 @@ export const bookingsList = () => {
         }
 
         // Generate HTML for booking item
-        bookingsHTML += `<li>${bandName} are playing at ${venueName} on ${bookingDate}</li>`
+        bookingsHTML += `<li data-type="booking"
+                                date-id="${booking.id}">
+                                ${bandName} are playing at ${venueName} on ${bookingDate}
+                        </li>`
     }
 
     // Finish string of HTML to return
