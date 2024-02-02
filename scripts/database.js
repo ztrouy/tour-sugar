@@ -169,16 +169,66 @@ const database = {
             bandId: 10, 
             date: '2024-02-18' 
         },
-        { id: 11, venueId: 1, bandId: 2, date: '2024-02-19' },
-        { id: 12, venueId: 1, bandId: 7, date: '2024-02-19' },
-        { id: 13, venueId: 2, bandId: 1, date: '2024-02-20' },
-        { id: 14, venueId: 2, bandId: 6, date: '2024-02-20' },
-        { id: 15, venueId: 3, bandId: 4, date: '2024-02-21' },
-        { id: 16, venueId: 3, bandId: 9, date: '2024-02-21' },
-        { id: 17, venueId: 4, bandId: 3, date: '2024-02-22' },
-        { id: 18, venueId: 4, bandId: 8, date: '2024-02-22' },
-        { id: 19, venueId: 5, bandId: 5, date: '2024-02-23' },
-        { id: 20, venueId: 5, bandId: 10, date: '2024-02-23' }
+        { 
+            id: 11, 
+            venueId: 1, 
+            bandId: 2, 
+            date: '2024-02-19' 
+        },
+        { 
+            id: 12, 
+            venueId: 1, 
+            bandId: 7, 
+            date: '2024-02-19' 
+        },
+        { 
+            id: 13, 
+            venueId: 2, 
+            bandId: 1, 
+            date: '2024-02-20' 
+        },
+        { 
+            id: 14, 
+            venueId: 2, 
+            bandId: 6, 
+            date: '2024-02-20' 
+        },
+        { 
+            id: 15, 
+            venueId: 3, 
+            bandId: 4, 
+            date: '2024-02-21' 
+        },
+        { 
+            id: 16, 
+            venueId: 3, 
+            bandId: 9, 
+            date: '2024-02-21' 
+        },
+        { 
+            id: 17, 
+            venueId: 4, 
+            bandId: 3, 
+            date: '2024-02-22' 
+        },
+        { 
+            id: 18, 
+            venueId: 4, 
+            bandId: 8, 
+            date: '2024-02-22' 
+        },
+        { 
+            id: 19, 
+            venueId: 5, 
+            bandId: 5, 
+            date: '2024-02-23' 
+        },
+        { 
+            id: 20, 
+            venueId: 5, 
+            bandId: 10,
+            date: '2024-02-23' 
+        }
     ],
     genres: [
         { 
