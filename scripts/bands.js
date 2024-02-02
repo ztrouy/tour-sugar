@@ -1,4 +1,4 @@
-import { getBands } from "./database.js";
+import { getBands, getBookings, getVenues } from "./database.js";
 
 export const bandsList = () => {
     const bands = getBands()
@@ -10,7 +10,10 @@ export const bandsList = () => {
     for (const band of bands) {
         
         // Generate the HTML for the band item
-        bandsHTML += `<li>${band.name}</li>`
+        bandsHTML += `<li data-type="band"
+                            data-id="${band.id}">
+                            ${band.name}
+                        </li>`
     }
 
     // Finish the string of HTML to return
