@@ -98,6 +98,16 @@ const database = {
              formationYear: '1959' 
         }
     ],
+    bandMembers: [
+        {
+            id: ,
+            firstName: "",
+            lastName: "",
+            birthYear: ,
+            roleId: ,
+            bandId:
+        }
+    ],
     bookings: [
         { 
             id: 1, 
