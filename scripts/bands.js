@@ -1,4 +1,4 @@
-import { getBands, getBookings, getVenues } from "./database.js";
+import { getBandMembers, getBandRoles, getBands, getBookings, getVenues } from "./database.js";
 
 export const bandsList = () => {
     const bands = getBands()
@@ -29,6 +29,23 @@ document.addEventListener("click", (clickEvent) => {
     if (eventTarget.dataset.type === "band") {
         const bandId = parseInt(eventTarget.dataset.id)
 
+        const currentBandMembers = []
+        const bandMembers = getBandMembers()
+        const bandRoles = getBandRoles()
+        
+        for (const member of bandMembers) {
+            
+            if (member.bandId === bandId) {
+                
+                const memberRole = bandRoles[member.roleId + 1].name
+                const memberString = `${member.firstName} ${member.lastName} (${memberRole})`
+               
+                currentBandMembers.push(memberString)
+            }
+        }
+        
+        const bandMembersString = currentBandMembers.join("\n")
+
         const bookings = getBookings()
         const venues = getVenues()
         const venueNames = []
@@ -43,8 +60,8 @@ document.addEventListener("click", (clickEvent) => {
             }
         }
 
-        const venueNamesString = venueNames.join(", ")
+        const venueNamesString = venueNames.join("\n")
 
-        window.alert(`They are playing at the following venues: ${venueNamesString}`)
+        window.alert(`${bandMembersString}\n\n${venueNamesString}`)
     }
 })
