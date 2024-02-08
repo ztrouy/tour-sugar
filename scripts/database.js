@@ -41,61 +41,71 @@ const database = {
             id: 1, 
             name: 'The Rolling Stones', 
             genre: 1, 
-            formationYear: '1962' 
+            formationYear: '1962',
+            memberCount: 4
         },
         { 
             id: 2, 
             name: 'Coldplay', 
             genre: 2, 
-            formationYear: '1996' 
+            formationYear: '1996',
+            memberCount: 4
         },
         { 
             id: 3, 
             name: 'Miles Davis Quintet', 
             genre: 3, 
-            formationYear: '1955' 
+            formationYear: '1955',
+            memberCount: 5
         },
         { 
             id: 4, 
             name: 'B.B. King', 
             genre: 4, 
-            formationYear: '1948' 
+            formationYear: '1948',
+            memberCount: 1
         },
         { 
             id: 5, 
             name: 'Taylor Swift', 
             genre: 5, 
-            formationYear: '2006' 
+            formationYear: '2006',
+            memberCount: 1
         },
         { 
             id: 6, 
             name: 'U2', 
             genre: 1, 
-            formationYear: '1976' 
+            formationYear: '1976',
+            memberCount: 5
         },
         { 
             id: 7, 
             name: 'Maroon 5', 
             genre: 2, 
-            formationYear: '1994' 
+            formationYear: '1994',
+            memberCount: 5
         },
         { 
             id: 8, 
             name: 'John Coltrane Quartet', 
             genre: 3, 
-            formationYear: '1960' 
+            formationYear: '1960',
+            memberCount: 4
         },
         { 
             id: 9, 
             name: 'Eric Clapton', 
             genre: 4, 
-            formationYear: '1963' 
+            formationYear: '1963',
+            memberCount: 1
         },
         { 
             id: 10,
              name: 'Dolly Parton', 
              genre: 5, 
-             formationYear: '1959' 
+             formationYear: '1959',
+             memberCount: 1
         }
     ],
     bandMembers: [
