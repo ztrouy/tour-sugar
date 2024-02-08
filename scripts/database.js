@@ -40,72 +40,360 @@ const database = {
         { 
             id: 1, 
             name: 'The Rolling Stones', 
-            memberCount: 4, 
             genre: 1, 
-            formationYear: '1962' 
+            formationYear: '1962',
+            memberCount: 4
         },
         { 
             id: 2, 
             name: 'Coldplay', 
-            memberCount: 4, 
             genre: 2, 
-            formationYear: '1996' 
+            formationYear: '1996',
+            memberCount: 4
         },
         { 
             id: 3, 
             name: 'Miles Davis Quintet', 
-            memberCount: 5, 
             genre: 3, 
-            formationYear: '1955' 
+            formationYear: '1955',
+            memberCount: 5
         },
         { 
             id: 4, 
             name: 'B.B. King', 
-            memberCount: 1, 
             genre: 4, 
-            formationYear: '1948' 
+            formationYear: '1948',
+            memberCount: 1
         },
         { 
             id: 5, 
             name: 'Taylor Swift', 
-            memberCount: 1, 
             genre: 5, 
-            formationYear: '2006' 
+            formationYear: '2006',
+            memberCount: 1
         },
         { 
             id: 6, 
             name: 'U2', 
-            memberCount: 4, 
             genre: 1, 
-            formationYear: '1976' 
+            formationYear: '1976',
+            memberCount: 5
         },
         { 
             id: 7, 
             name: 'Maroon 5', 
-            memberCount: 5, 
             genre: 2, 
-            formationYear: '1994' 
+            formationYear: '1994',
+            memberCount: 5
         },
         { 
             id: 8, 
             name: 'John Coltrane Quartet', 
-            memberCount: 4, 
             genre: 3, 
-            formationYear: '1960' 
+            formationYear: '1960',
+            memberCount: 4
         },
         { 
             id: 9, 
             name: 'Eric Clapton', 
-            memberCount: 1, 
             genre: 4, 
-            formationYear: '1963' 
+            formationYear: '1963',
+            memberCount: 1
         },
         { 
             id: 10,
              name: 'Dolly Parton', 
-             memberCount: 1, 
              genre: 5, 
-             formationYear: '1959' 
+             formationYear: '1959',
+             memberCount: 1
+        }
+    ],
+    bandMembers: [
+        {
+            id: 1,
+            firstName: "Mick",
+            lastName: "Jagger",
+            birthYear: 1943,
+            roleId: 2,
+            bandId: 1
+        },
+        {
+            id: 2,
+            firstName: "Keith",
+            lastName: "Richards",
+            birthYear: 1943,
+            roleId: 4,
+            bandId: 1
+        },
+        {
+            id: 3,
+            firstName: "Brian",
+            lastName: "Jones",
+            birthYear: 1942,
+            roleId: 9,
+            bandId: 1
+        },
+        {
+            id: 4,
+            firstName: "Bill",
+            lastName: "Wyman",
+            birthYear: 1936,
+            roleId: 6,
+            bandId: 1
+        },
+        {
+            id: 5,
+            firstName: "Chris",
+            lastName: "Martin",
+            birthYear: 1977,
+            roleId: 9,
+            bandId: 2
+        },
+        {
+            id: 6,
+            firstName: "Johnny",
+            lastName: "Buckland",
+            birthYear: 1977,
+            roleId: 4,
+            bandId: 2
+        },
+        {
+            id: 7,
+            firstName: "Guy",
+            lastName: "Berryman",
+            birthYear: 1978,
+            roleId: 6,
+            bandId: 2
+        },
+        {
+            id: 8,
+            firstName: "Will",
+            lastName: "Champion",
+            birthYear: 1978,
+            roleId: 9,
+            bandId: 2
+        },
+        {
+            id: 9,
+            firstName: "Miles",
+            lastName: "Davis",
+            birthYear: 1926,
+            roleId: 9,
+            bandId: 3
+        },
+        {
+            id: 10,
+            firstName: "Sonny",
+            lastName: "Rollins",
+            birthYear: 1930,
+            roleId: 11,
+            bandId: 3
+        },
+        {
+            id: 11,
+            firstName: "Red",
+            lastName: "Garland",
+            birthYear: 1923,
+            roleId: 10,
+            bandId: 3
+        },
+        {
+            id: 12,
+            firstName: "Paul",
+            lastName: "Chambers",
+            birthYear: 1935,
+            roleId: 6,
+            bandId: 3
+        },
+        {
+            id: 13,
+            firstName: "Philly Joe",
+            lastName: "Jones",
+            birthYear: 1923,
+            roleId: 8,
+            bandId: 3
+        },
+        {
+            id: 14,
+            firstName: "B. B.",
+            lastName: "King",
+            birthYear: 1925,
+            roleId: 9,
+            bandId: 4
+        },
+        {
+            id: 15,
+            firstName: "Taylor",
+            lastName: "Swift",
+            birthYear: 1989,
+            roleId: 9,
+            bandId: 5
+        },
+        {
+            id: 16,
+            firstName: "Paul",
+            lastName: "Hewson",
+            birthYear: 1960,
+            roleId: 9,
+            bandId: 6
+        },
+        {
+            id: 17,
+            firstName: "David",
+            lastName: "Evans",
+            birthYear: 1961,
+            roleId: 9,
+            bandId: 6
+        },
+        {
+            id: 18,
+            firstName: "Adam",
+            lastName: "Clayton",
+            birthYear: 1960,
+            roleId: 6,
+            bandId: 6
+        },
+        {
+            id: 19,
+            firstName: "Larry",
+            lastName: "Mullen Jr.",
+            birthYear: 1961,
+            roleId: 8,
+            bandId: 6
+        },
+        {
+            id: 20,
+            firstName: "Adam",
+            lastName: "Levine",
+            birthYear: 1979,
+            roleId: 9,
+            bandId: 7
+        },
+        {
+            id: 21,
+            firstName: "Jesse",
+            lastName: "Carmichael",
+            birthYear: 1979,
+            roleId: 9,
+            bandId: 7
+        },
+        {
+            id: 22,
+            firstName: "James",
+            lastName: "Valentine",
+            birthYear: 1978,
+            roleId: 3,
+            bandId: 7
+        },
+        {
+            id: 23,
+            firstName: "Matt",
+            lastName: "Flynn",
+            birthYear: 1970,
+            roleId: 8,
+            bandId: 7
+        },
+        {
+            id: 24,
+            firstName: "Sam",
+            lastName: "Farrar",
+            birthYear: 1978,
+            roleId: 6,
+            bandId: 7
+        },
+        {
+            id: 25,
+            firstName: "John",
+            lastName: "Coltrane",
+            birthYear: 1926,
+            roleId: 11,
+            bandId: 8
+        },
+        {
+            id: 26,
+            firstName: "Elvin",
+            lastName: "Jones",
+            birthYear: 1927,
+            roleId: 8,
+            bandId: 8
+        },
+        {
+            id: 27,
+            firstName: "McCoy",
+            lastName: "Tyner",
+            birthYear: 1938,
+            roleId: 10,
+            bandId: 8
+        },
+        {
+            id: 28,
+            firstName: "Jimmy",
+            lastName: "Garrison",
+            birthYear: 1934,
+            roleId: 6,
+            bandId: 8
+        },
+        {
+            id: 29,
+            firstName: "Eric",
+            lastName: "Clapton",
+            birthYear: 1945,
+            roleId: 9,
+            bandId: 9
+        },
+        {
+            id: 30,
+            firstName: "Dolly",
+            lastName: "Parton",
+            birthYear: 1946,
+            roleId: 1,
+            bandId: 10
+        }
+    ],
+    bandRoles: [
+        {
+            id: 1,
+            name: "Lead Vocalist"
+        },
+        {
+            id: 2,
+            name: "Vocalist"
+        },
+        {
+            id: 3,
+            name: "Lead Guitarist"
+        },
+        {
+            id: 4,
+            name: "Guitarist"
+        },
+        {
+            id: 5,
+            name: "Lead Bassist"
+        },
+        {
+            id: 6,
+            name: "Bassist"
+        },
+        {
+            id: 7,
+            name: "Lead Drummer"
+        },
+        {
+            id: 8,
+            name: "Drummer"
+        },
+        {
+            id: 9,
+            name: "Multi Instrumentalist"
+        },
+        {
+            id: 10,
+            name: "Pianist"
+        },
+        {
+            id: 11,
+            name: "Saxophonist"
         }
     ],
     bookings: [
@@ -260,6 +548,14 @@ export const getVenues = () => {
 
 export const getBands = () => {
     return database.bands.map(band => ({...band}))
+}
+
+export const getBandMembers = () => {
+    return database.bandMembers.map(member => ({...member}))
+}
+
+export const getBandRoles = () => {
+    return database.bandRoles.map(role => ({...role}))
 }
 
 export const getBookings = () => {
