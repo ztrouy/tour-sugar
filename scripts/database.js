@@ -40,70 +40,60 @@ const database = {
         { 
             id: 1, 
             name: 'The Rolling Stones', 
-            memberCount: 4, 
             genre: 1, 
             formationYear: '1962' 
         },
         { 
             id: 2, 
             name: 'Coldplay', 
-            memberCount: 4, 
             genre: 2, 
             formationYear: '1996' 
         },
         { 
             id: 3, 
             name: 'Miles Davis Quintet', 
-            memberCount: 5, 
             genre: 3, 
             formationYear: '1955' 
         },
         { 
             id: 4, 
             name: 'B.B. King', 
-            memberCount: 1, 
             genre: 4, 
             formationYear: '1948' 
         },
         { 
             id: 5, 
             name: 'Taylor Swift', 
-            memberCount: 1, 
             genre: 5, 
             formationYear: '2006' 
         },
         { 
             id: 6, 
             name: 'U2', 
-            memberCount: 4, 
             genre: 1, 
             formationYear: '1976' 
         },
         { 
             id: 7, 
             name: 'Maroon 5', 
-            memberCount: 5, 
             genre: 2, 
             formationYear: '1994' 
         },
         { 
             id: 8, 
             name: 'John Coltrane Quartet', 
-            memberCount: 4, 
             genre: 3, 
             formationYear: '1960' 
         },
         { 
             id: 9, 
             name: 'Eric Clapton', 
-            memberCount: 1, 
             genre: 4, 
             formationYear: '1963' 
         },
         { 
             id: 10,
              name: 'Dolly Parton', 
-             memberCount: 1, 
              genre: 5, 
              formationYear: '1959' 
         }
