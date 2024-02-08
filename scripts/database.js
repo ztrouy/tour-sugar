@@ -544,6 +544,10 @@ export const getBandMembers = () => {
     return database.bandMembers.map(member => ({...member}))
 }
 
+export const getBandRoles = () => {
+    return database.bandRoles.map(role => ({...role}))
+}
+
 export const getBookings = () => {
     return database.bookings.map(booking => ({...booking}))
 }
