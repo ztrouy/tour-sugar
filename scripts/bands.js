@@ -62,6 +62,6 @@ document.addEventListener("click", (clickEvent) => {
 
         const venueNamesString = venueNames.join("\n")
 
-        window.alert(`${bandMembersString}\n\n${venueNamesString}`)
+        window.alert(`${bandMembersString}\n\nUpcoming Shows:\n${venueNamesString}`)
     }
 })
