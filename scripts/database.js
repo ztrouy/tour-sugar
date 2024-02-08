@@ -342,9 +342,41 @@ const database = {
     ],
     bandRoles: [
         {
-            id: ,
-            name: ""
-        }, 
+            id: 1,
+            name: "Lead Vocalist"
+        },
+        {
+            id: 2,
+            name: "Vocalist"
+        },
+        {
+            id: 3,
+            name: "Lead Guitarist"
+        },
+        {
+            id: 4,
+            name: "Guitarist"
+        },
+        {
+            id: 5,
+            name: "Lead Bassist"
+        },
+        {
+            id: 6,
+            name: "Bassist"
+        },
+        {
+            id: 7,
+            name: "Lead Drummer"
+        },
+        {
+            id: 8,
+            name: "Drummer"
+        },
+        {
+            id: 9,
+            name: "Multi Instrumentalist"
+        }
     ],
     bookings: [
         { 
