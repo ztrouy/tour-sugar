@@ -340,6 +340,12 @@ const database = {
             bandId: 10
         }
     ],
+    bandRoles: [
+        {
+            id: ,
+            name: ""
+        }, 
+    ],
     bookings: [
         { 
             id: 1, 
